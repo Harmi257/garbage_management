@@ -1,0 +1,80 @@
+/* Fullscreen container */
+.fullscreen-form-container {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+    background: linear-gradient(to right, #e0f7fa, #e1bee7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+  
+  /* Container for the form */
+  .update-bin-container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    flex: 1; /* Ensure it takes available space */
+  }
+  
+  /* Form and content styling */
+  .update-bin-form {
+    margin-top: 20px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #309bdd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2b5578;
+  }
+  
+  .bin-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bin-actions button {
+    margin-right: 10px;
+  }
+  
+  .bin-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Space between the buttons */
+    margin-top: 10px;
+  }

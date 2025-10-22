@@ -1,0 +1,93 @@
+/* Form Container Styling */
+.form-container {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(5px); /* Optional: Adds a slight blur effect behind the container */
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Focused input field styling */
+input:focus {
+  outline: none;
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Submit Button Styling */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue when hovered */
+}
+
+button:active {
+  transform: scale(0.98); /* Slight scaling effect when button is pressed */
+}
+
+/* Register Link Styling */
+p {
+  color: #333;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+button {
+  background: none;
+  color: #3498db;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+button:hover {
+  color: #2980b9;
+}

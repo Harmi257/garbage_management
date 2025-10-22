@@ -1,0 +1,76 @@
+/* Main container for the profile page */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f8ff, #e0f7fa); /* Soft gradient background */
+  min-height: 100vh; /* Ensure the background covers the full height */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Profile title */
+.profile-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Darker shade for the title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for the title */
+}
+
+/* Error message */
+.profile-error {
+  color: red;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Profile box for displaying user data */
+.profile-box {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.85); /* Slightly more opaque background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for more contrast */
+  border-radius: 15px;
+  width: 320px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-box:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* User info inside profile box */
+.profile-box p {
+  margin: 12px 0;
+  font-size: 1.1rem;
+  color: #34495e; /* Slightly lighter shade for the text */
+}
+
+.profile-box strong {
+  font-weight: 600;
+  color: #2980b9; /* Blue color for strong text */
+}
+
+/* Profile image styling */
+.profile-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #3498db; /* Border around profile image */
+  transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}

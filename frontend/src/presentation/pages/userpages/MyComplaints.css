@@ -1,0 +1,137 @@
+/* Main container for the complaints page with gradient background */
+/* Main container for the complaints page with light blue gradient background */
+.complaints-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #d0eaff, #e6f7ff); /* Light blue gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title for the complaints section */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Grid container for displaying complaint cards */
+.complaint-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Individual complaint card style */
+.complaint-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.complaint-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title inside each complaint card */
+.complaint-card h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* Text inside the complaint card */
+.complaint-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Additional styling for the complaint card status */
+.complaint-card .status {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.complaint-card .status.pending {
+  color: #f39c12;
+}
+
+.complaint-card .status.in-progress {
+  color: #e74c3c;
+}
+
+
+/* Title for the complaints section */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Grid container for displaying complaint cards */
+.complaint-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Individual complaint card style */
+.complaint-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.complaint-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title inside each complaint card */
+.complaint-card h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* Text inside the complaint card */
+.complaint-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Additional styling for the complaint card status */
+.complaint-card .status {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.complaint-card .status.pending {
+  color: #f39c12;
+}
+
+.complaint-card .status.in-progress {
+  color: #e74c3c;
+}

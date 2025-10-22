@@ -1,0 +1,103 @@
+/* Ensure the whole page can scroll */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-y: auto; /* Allow scrolling for the entire page */
+  height: 100%; /* Ensure the page takes up full height */
+}
+
+/* Container that holds all the content */
+.view-container {
+  min-height: 100vh; /* Full viewport height */
+  padding: 30px;
+  background: linear-gradient(135deg, #e4e2e7, #a59db1); /* Light purple gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* Chart container styling */
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Filter section */
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.filter-container select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Complaints list container */
+.complaints-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-height: 500px; /* Limit height */
+  overflow-y: auto; /* Vertical scroll */
+  padding-right: 10px; /* For better scroll visibility */
+  margin-bottom: 20px; /* Optional: add some space below */
+}
+
+/* Optional: Stylish scrollbar */
+.complaints-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Individual complaint card */
+.complaint-card {
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.complaint-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.complaint-details {
+  margin-top: 10px;
+}
+
+.complaint-item {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Heading styles */
+h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #4b0082;
+}
+
+/* Style for select inputs */
+select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}

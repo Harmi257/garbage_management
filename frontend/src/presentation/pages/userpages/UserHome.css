@@ -1,0 +1,62 @@
+.user-page-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #fafbfd, #9ac4e5); /* Soft professional blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 3rem;
+  color: #0a3d62; /* Dark blue heading */
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #3c6382; /* Soft blue text */
+  margin-bottom: 2rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  background: linear-gradient(135deg, #74b9ff, #1881d1); /* Bright blue buttons */
+  color: white;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(9, 132, 227, 0.4);
+}
+
+.nav-button:hover {
+  background: linear-gradient(135deg, #0984e3, #67a1db); /* Inverse gradient on hover */
+  box-shadow: 0 6px 16px rgba(9, 132, 227, 0.6);
+  transform: translateY(-2px);
+}
+
+.nav-button svg {
+  margin-right: 10px;
+}

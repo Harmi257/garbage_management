@@ -1,0 +1,49 @@
+/* Make the whole screen usable */
+.user-details-container {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    background-color: #f2f5fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .user-details-container h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  .user-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+  }
+  
+  .user-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .user-card p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #34495e;
+  }
+  
+  .user-card strong {
+    color: #1976d2;
+  }
+  
